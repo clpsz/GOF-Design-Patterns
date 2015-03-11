@@ -26,3 +26,7 @@
 *.exe
 *.out
 *.app
+
+_main
+a.out
+
