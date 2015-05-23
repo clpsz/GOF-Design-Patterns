@@ -1,3 +1,4 @@
+CXX = g++
 CFLAGS = -Wall
 LDFLAGS = 
 
