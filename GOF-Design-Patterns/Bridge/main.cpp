@@ -1,13 +1,18 @@
 #include "ConcreteImplementorA.h"
+#include "ConcreteImplementorB.h"
 #include "RefinedAbstraction.h"
 
 
 int main()
 {
-    Implementor *implementor = new ConcreteImplementorA();
+    Implementor *impA = new ConcreteImplementorA();
+    Implementor *impB = new ConcreteImplementorB();
     Abstraction *abstraction = new RefinedAbstraction();
-    abstraction->setImplementor(implementor);
 
+    abstraction->setImplementor(impA);
+    abstraction->operate();
+
+    abstraction->setImplementor(impB);
     abstraction->operate();
 
     return 0;
